@@ -1,0 +1,17 @@
+barre horizontale, au top qui descend comme le titre, barre orangée avec boutons (soumettre un formulaire, site du lycée, page)
+h1 id="tit1" => descendre side mi-haut + h2 qui descend plus bas en dessous du h1 et après
+p id=p1s / p id="2s" => remontent midd screeen dans deux blocs en css couleur bleu foncé (foncée/marine) = {
+	p1 = bon en gros on explique les intérêts du repair lycée, ce que c'est et comment on y participe ect...
+}
+
+bouton1 id=formulaire => redirige (depuis la barre horizontale vers les formulaires)
+p3 ="info-formu" => dans le bloc "formulaire" en plein millieu, au dessus de la barre d'input de mail qui explique les infos sur le formulaire et petite notion
+de confidentialité au cas ou pour pas se faire daronned par la RGPD.
+	bouton soumettre => qui renvoie dans une base de données les emails inscrits par les utilisateurs à l'aide du formulaire (donc création d'une base de donnée) et qui renvoie 
+    sur une page successfull
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+’
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
