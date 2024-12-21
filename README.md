@@ -1,4 +1,6 @@
-Repaire Lycée - Votre espace de réparation informatique collaboratif
+**Repaire Lycée** 
+
+- Votre espace de réparation informatique collaboratif
 Bienvenue sur Repaire Lycée, une initiative dédiée à la réparation et au dépannage du matériel informatique défectueux des élèves de notre établissement.
 
 📌 Notre mission
