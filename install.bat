@@ -10,3 +10,4 @@ pip install nodejs
 pip install requests
 pip install beautifulsoup
 pip install jsonfile
+pip install mysql-connector-python
