@@ -12,14 +12,20 @@ db_config = {
 
 @app.route('/success')
 def success():
-    return "gg"
+    return redirect('/success.html')
 
 @app.route('/submit', methods=['POST'])
 def submit_form():
-    email = request.form.get('email')
+    if request.is_json:
+        data = request.get_json()
+    else:
+        # Gestion alternative pour le format form-urlencoded
+        data = request.form.to_dict()
+
+    email = data.get('email')
     if not email:
         return jsonify({"error": "L'email est requis"}), 400
-    
+
     try:
         conn = mysql.connector.connect(**db_config)
         cursor = conn.cursor()
@@ -30,9 +36,10 @@ def submit_form():
         cursor.close()
         conn.close()
 
-        return redirect('/success.html')
+        return jsonify({"message": "Email enregistré avec succès"}), 200
     except mysql.connector.Error as err:
         return jsonify({"error": f"Erreur MySQL : {err}"}), 500
+
 
 if __name__ == "__main__":
     app.run(debug=True)
