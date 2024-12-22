@@ -1,10 +1,10 @@
 # **Repaire Lycée Gustave Eiffel** 
 
 - Votre espace de réparation informatique collaboratif
-Bienvenue sur *Repaire Lycée Eiffel*, une initiative dédiée à la réparation et au dépannage du matériel informatique défectueux des élèves de notre établissement.
+<br>Bienvenue sur *Repaire Lycée Eiffel*, une initiative dédiée à la réparation et au dépannage du matériel informatique défectueux des élèves de notre établissement.
 
 📌 - Notre mission
-Faciliter l'accès à des solutions de réparation tout en promouvant l'entraide et le partage des connaissances. Que vous soyez un étudiant ayant besoin d'aide pour un ordinateur en panne ou un passionné d'informatique prêt à mettre vos compétences au service des autres, le Repaire Lycée est fait pour vous !
+<br>Faciliter l'accès à des solutions de réparation tout en promouvant l'entraide et le partage des connaissances. Que vous soyez un étudiant ayant besoin d'aide pour un ordinateur en panne ou un passionné d'informatique prêt à mettre vos compétences au service des autres, le Repaire Lycée est fait pour vous !
 
 🔧 - Comment ça fonctionne ?
 
@@ -21,4 +21,4 @@ Apprentissage en action : Les élèves intéressés peuvent participer aux répa
 - Écologie : Prolongez la durée de vie de vos appareils pour réduire les déchets électroniques.
 
 📬 - Nous contacter
-Pour toute question ou demande d'informations, rendez-vous sur notre site ou contactez-nous directement via notre email : {bah faut mettre un mail mtn}.
+<br>Pour toute question ou demande d'informations, rendez-vous sur notre site ou contactez-nous directement via notre email : {bah faut mettre un mail mtn}.
