@@ -24,31 +24,3 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "formulaire.html";
     });
   });
-  
-// Gestionnaire pour rediriger après soumission du formulaire
-const form = document.getElementById("email-form");
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const email = document.getElementById("email").value;
-
-  try {
-    const response = await fetch("http://127.0.0.1:5000/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json", // Assure l'envoi en JSON
-      },
-      body: JSON.stringify({ email }), // Corps de la requête en JSON
-    });
-
-    if (response.ok) {
-      window.location.href = "success.html"; // Redirection en cas de succès
-    } else {
-      const errorData = await response.json();
-      alert(errorData.error || "Une erreur s'est produite.");
-    }
-  } catch (error) {
-    console.error("Erreur:", error);
-    alert("Une erreur s'est produite. Veuillez réessayer.");
-  }
-});

@@ -1,6 +1,7 @@
 CREATE DATABASE repair_lycee;
 
 USE repair_lycee;
+ALTER TABLE users AUTO_INCREMENT = 1;
 
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,

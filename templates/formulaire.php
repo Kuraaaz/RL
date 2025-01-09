@@ -21,11 +21,45 @@
   <section id="formulaire">
     <h3 id="info-formu">Inscrivez-vous pour être informé des prochaines sessions de réparation</h3>
     <p id="confidentialite">Vos informations resteront confidentielles conformément aux règles RGPD.</p>
-    <form action="http://127.0.0.1:5000/submit" method="POST">
+    <form action="formulaire.php" method="POST">
         <label for="email">Votre adresse e-mail :</label>
         <input type="email" id="email" name="email" required>
         <button type="submit">Soumettre</button>
       </form>      
   </section>  
+
+  <?php
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      $email = $_POST['email'];
+
+      // Connexion à la base de données
+      $servername = "localhost";
+      $username = "root";
+      $password = "";
+      $dbname = "repair_lycee";
+
+      // Créer une connexion
+      $conn = new mysqli($servername, $username, $password, $dbname);
+
+      // Vérifier la connexion
+      if ($conn->connect_error) {
+          die("Connection failed: " . $conn->connect_error);
+      }
+
+      // Préparer et exécuter la requête d'insertion
+      $stmt = $conn->prepare("INSERT INTO users (email) VALUES (?)");
+      $stmt->bind_param("s", $email);
+
+      if ($stmt->execute()) {
+          echo "<p>Inscription réussie !</p>";
+      } else {
+          echo "<p>Erreur : " . $stmt->error . "</p>";
+      }
+
+      // Fermer la connexion
+      $stmt->close();
+      $conn->close();
+  }
+  ?>
 </body>
 </html>
