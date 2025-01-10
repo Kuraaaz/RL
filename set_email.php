@@ -5,27 +5,33 @@ $username = 'root';
 $password = 'Sotcamontop94!';
 
 try {
-    // Connexion à la base de données avec PDO
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     die("Erreur de connexion : " . $e->getMessage());
 }
 
-// Vérification si le formulaire a été soumis
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 
     if ($email) {
         try {
-            // Préparer et exécuter la requête pour insérer l'email
-            $stmt = $pdo->prepare("INSERT INTO emails (email) VALUES (:email)");
+            $stmt = $pdo->prepare("SELECT COUNT(*) FROM emails WHERE email = :email");
             $stmt->bindParam(':email', $email, PDO::PARAM_STR);
             $stmt->execute();
+            $count = $stmt->fetchColumn();
 
-            // Redirection vers une page de confirmation
-            header('Location: templates/success.html');
-            exit();
+            if ($count > 0) {
+                header('Location: templates/already_register.html');
+                exit();
+            } else {
+                $stmt = $pdo->prepare("INSERT INTO emails (email) VALUES (:email)");
+                $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+                $stmt->execute();
+
+                header('Location: templates/success.html');
+                exit();
+            }
         } catch (PDOException $e) {
             echo "Erreur lors de l'enregistrement : " . $e->getMessage();
         }
