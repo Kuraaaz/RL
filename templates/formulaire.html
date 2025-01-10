@@ -21,10 +21,11 @@
   <section id="formulaire">
     <h3 id="info-formu">Inscrivez-vous pour être informé des prochaines sessions de réparation</h3>
     <p id="confidentialite">Vos informations resteront confidentielles conformément aux règles RGPD.</p>
-    <form action="http://127.0.0.1:5000/submit" method="POST">
-        <label for="email">Votre adresse e-mail :</label>
-        <input type="email" id="email" name="email" required>
-        <button type="submit">Soumettre</button>
+    <form action="../set_email.php" method="POST">
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit">Soumettre</button>
+  </form>
       </form>      
   </section>  
 </body>
