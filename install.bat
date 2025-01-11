@@ -9,3 +9,4 @@ pip install nodejs
 pip install requests
 pip install mysql-connector-python
 choco install php
+npm i
