@@ -1,0 +1,12 @@
+En v2v genre :
+- Quand on descend sur le site, des images qui spawnent à coté des paragraphes (p1s et p2s), bien espacés et aérés (disposition Quinconces) (CSS & javascript)
+- Charte graphique équivalente aux couleurs du site du lycee ( #e85c42 , #1d4844)
+- Créer un espace compte avec un rond et une icone de personnage (fichier favcomptes.ico)
+- Les deux paragraphes p1s et p2s doivent-être dans des boxes quasiment transparentes qui ont des ombres fines.
+- Les images doivent apparaitrent dans un cercle avec des bordures orange. Le cercle grossit et les bords de couleur s'élargissent lorsque l'on passe la souris dessus.
+- Rajouter en bas des derniers paragraphes des boutons qui renvoient : 
+    - à l'inscription de la newsletter (formulaire.html)
+    - à une nouvelle page nommée planning.html
+    - un espace compte
+    - le site du lycée
+    - une page actualité du repair lycee (actu.hmtl)

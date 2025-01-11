@@ -8,7 +8,6 @@
   <script src="../index.js" defer></script>
 </head>
 <body>
-  <!-- Barre horizontale & boutons -->
   <header>
     <nav>
       <ul>
@@ -16,25 +15,51 @@
         <li><a href="https://www.eiffel-bordeaux.org" target="_blank">Site du lycée</a></li>
         <li><a href="#pgblock">Page d'accueil</a></li>
       </ul>
+      <a href="comptes.html">
+        <button style="border-radius: 50%; background: url('favcomptes.ico') no-repeat center center; width: 50px; height: 50px; background-size: cover;"></button>
+      </a>
     </nav>
   </header>
 
-  <section id="tit1">
-    <h1>Repair Lycée</h1>
-    <h2>Lycée Gustave Eiffel Bordeaux</h2>
-  </section>
+  <main>
+    <section id="tit1">
+      <h1>Repair Lycée</h1>
+      <h2>Lycée Gustave Eiffel Bordeaux</h2>
+    </section>
 
-  <div id="pgblock">
-    <p id="p1s">Le repaire lycée est un espace de réparation dédié aux élèves, aux enseignants et aux personnels scolaires qui rencontrent des problèmes avec leurs équipements informatiques.
-      Inspiré du concept des repaire café, il permet à toute personne ayant un matériel défectueux de se rendre directement dans un lycée où des élèves formés et des professionnels 
-      qualifiés seront à même de diagnostiquer et réparer les appareils. Que ce soit pour un ordinateur, une tablette ou un autre périphérique, ces "techniciens en herbe" offriront des 
-      solutions adaptées, tout en mettant en avant l’aspect pédagogique et collaboratif de l’initiative.
-    </p>
-    <p id="p2s">Le fonctionnement du repaire lycée est simple : une fois l'équipement défectueux identifié, les utilisateurs se rendent dans le lycée partenaire où un espace de réparation est 
-      aménagé. Des sessions de réparation sont programmées régulièrement et peuvent être suivies sur le site du projet. L’objectif est de favoriser l'entraide et la transmission de 
-      savoir-faire entre les élèves et les visiteurs, tout en réduisant les coûts et l'impact environnemental lié à l'achat de nouveaux matériels. Ce projet vise à promouvoir l’autonomie 
-      numérique et à renforcer la communauté scolaire autour d'une démarche durable.
-    </p>
-  </div>
+    <div id="pgblock">
+      <div class="content">
+        <img src="path/to/image1.jpg" alt="Image description" class="circular-image">
+        <p id="p1s">Le repaire lycée est un espace de réparation dédié aux élèves, aux enseignants et aux personnels scolaires qui rencontrent des problèmes avec leurs équipements informatiques.</p>
+      </div>
+      <div class="content">
+        <img src="path/to/image2.jpg" alt="Image description" class="circular-image">
+        <p id="p2s">Le fonctionnement du repaire lycée est simple : une fois l'équipement défectueux identifié, les utilisateurs se rendent dans le lycée partenaire où un espace de réparation est aménagé.</p>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="formulaire-btn">Soumettre un formulaire</button>
+      <button id="info-btn">Plus d'infos</button>
+    </div>
+
+    <div class="imagine"> 
+      <section class="hidden"> 
+        <h1>📌- Notre mission</h1>
+        <p>Faciliter l'accès à des solutions de réparation tout en promouvant l'entraide et le partage des connaissances.</p> 
+      </section>
+      <section class="hidden">  
+        <h1>🔧- Comment ça marche ?</h1>
+        <p>Déposez votre matériel : Apportez vos appareils défectueux au point de collecte indiqué.</p> 
+      </section>
+      <section class="hidden"> 
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      </section>
+    </div> 
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Repair Lycée. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
